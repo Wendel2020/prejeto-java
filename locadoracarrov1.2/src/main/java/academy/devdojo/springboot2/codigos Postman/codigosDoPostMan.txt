@@ -1,0 +1,65 @@
+CARROS::::
+post {
+        "modelo": "Supra",
+        "marca": "Toyota",
+        "valor": 900,
+        "disponivel": true
+    }
+
+findByModel: http://localhost:8080/cadastroCarros/find?modelo=Mustang
+
+url carros : http://localhost:8080/cadastroCarros
+
+put {
+        "id": "4",
+        "modelo": "Fusca",
+        "marca": "Volkswagen",
+        "valor": 80,
+        "disponivel": false
+    }
+
+delete: http://localhost:8080/cadastroCarros/5
+
+CLIENTE::::
+
+url cliente: http://localhost:8080/cadastroClientes/
+
+
+post {
+        "nome": "Paulo",
+        "cpf": "000.111.000-00",
+        "tel": "7799000001",
+        "email": "antonio@gmail.com",
+        "estadoFin": true
+    }
+
+put {
+        "id": "5",
+        "nome": "Paulo",
+        "cpf": "000.111.000-00",
+        "tel": "7799000001",
+        "email": "paulo@gmail.com",
+        "estadoFin": true
+    }
+
+delete:  http://localhost:8080/cadastroClientes/3
+
+
+LOCADORA ::::
+
+url locadora: http://localhost:8080/cadastroAluguel
+
+post {
+        "formDePag": "Cartao",
+        "data": "12/06/2022",
+        "multa": false
+    }
+
+put {
+        "id": 2,
+        "formDePag": "Cheque",
+        "data": "28/02/2022",
+        "multa": false
+    }
+
+delete: http://localhost:8080/cadastroAluguel/2
